@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Poker League | Card Crew</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <script>
+            window.onload = function () {
+
+            var x = document.getElementById('p1');
+            var y = document.getElementById('p2');
+
+            y.style.display = "none";
+
+            document.getElementById('trigger1').onclick = function swap1() {
+                document.getElementById('trigger1').className = "button primary";
+                document.getElementById('trigger2').className = "button";
+                x.style.display = "block";
+                y.style.display = "none";
+                }
+
+            document.getElementById('trigger2').onclick = function swap2() {
+                document.getElementById('trigger1').className = "button";
+                document.getElementById('trigger2').className = "button primary";
+                x.style.display = "none";
+                y.style.display = "block";
+                }
+            }
+        </script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Card Crew</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">About Us</a></li>
+							<li class="active"><a href="elements.html">Poker League</a></li>
+                            <li><a href="join.html">Join Us</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/cardcrew/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/unimelb.cardcrew" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Poker League<br />Season 1</h1>
+								</header>
+                                <button id='trigger1' onlick="swap1()" class="button primary">Current Rankings</button>
+                                <button id='trigger2' onlick="swap2()" class="button">Rules</button>
+                                <a href="https://google.com" class="button">Sign Up</a>
+                                <hr />
+                                <div id='p1'>
+                                    <header class="major">
+                                        <h2>Current Rankings</h2>
+                                    </header>
+                                    <span class="image left"><img src="images/joker.jpg" alt="" /></span>
+                                        <div class="table-wrapper">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Rank</th>
+                                                        <th>Name</th>
+                                                        <th>Points</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Harry Potter</td>
+                                                        <td>76.52</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Ronald Weasley</td>
+                                                        <td>72.14</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Hermione Granger</td>
+                                                        <td>55.89</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Neville Longbottom</td>
+                                                        <td>52.14</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>Luna Lovegood</td>
+                                                        <td>29.99</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>Cornelius Fudge</td>
+                                                        <td>21.02</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>Albus Dumbledore</td>
+                                                        <td>17.04</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>Remus Lupin</td>
+                                                        <td>12.01</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>Sirius Black</td>
+                                                        <td>2.02</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>Wilson Zhang</td>
+                                                        <td>0.01</td>
+                                                    </tr>                                                                                                                                                                                                                                                                          
+                                                </tbody>
+                                            </table>
+                                            <p><i>Rankings are updated every Friday.</i></p>
+                                        </div> 
+                                </div>
+                                <div id='p2'> 
+                                    <header class="major">
+                                        <h2>Official Rules and Procedures</h2>
+                                    </header>
+                                    <hr />
+                                    <h2>Rules of Play</h2>
+                                    <p>
+                                        <ol>
+                                            <li>Entry into the league and weekly games are <b>free of charge</b>. However the league is only open for Card Crew members.</li>
+                                            <li>There are no buy-ins or re-buys.</li>
+                                            <li>All players will be distributed an equal amount of chips at the beginning of each game by a Card Crew executive.</li>
+                                            <li>Blind structure will be detailed at the beginning of each game by a Card Crew executive.</li>
+                                            <li>Blinds will be timed by a Card Crew executive.</li> 
+                                            <li>Games will be no-limit (there will be no limit on maximum bet per round).</li>
+                                        </ol>
+                                    </p>
+
+                                    <hr />
+                                    <h2>League Structure</h2>
+                                    <p>
+                                        A game of poker is played every week at the Card Crew Weekly Meetup. 
+                                        Points are awarded for each game based on both placement and number of players in the game. 
+                                        Points attained from individual games are used to create a ranking of all players in the league (for more information see Scoring section). <br />
+                                        The <b>top five</b> players qualify for the finals, consisting of a five-player game of poker. Prizes are then awarded based on placement in the finals. 
+                                    </p>
+                                    <hr />
+                                    <h2>Scoring</h2>
+                                    <p>
+                                        Points for individual games are calculated using the formula: <br />
+                                        points =  ln((Players + 1) / Rank) <br /> 
+
+                                        The total points from each player's <b>top 6</b> games are used to determine the ranking.<br />
+                                        <i>This means you can miss out on up to 2 games without falling behind in points.</i>
+                                    </p>
+                                    <hr />
+                                    <h2>Prizes</h2>
+                                    <p>
+                                        <ol>
+                                            <li>Blah</li>
+                                            <li>Blah Blah</li>
+                                            <li>Blah Blah Blah</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </section>
+                    </div>
+            <!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">unimelb.cardcrew@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.facebook.com/cardcrew/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/unimelb.cardcrew" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Card Crew</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
